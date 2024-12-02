@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Eco-Shop</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <!-- Archivo CSS personalizado -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container-fluid">
+      <div class="row py-3 border-bottom">
+        <!-- Logo del sitio -->
+        <div class="col-sm-4 col-lg-2 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
+          <a href="index.html">
+            <img src="images/logo_eco_shop.svg" alt="logo" class="img-fluid" style="width: 200px;">
+          </a>
+        </div>
+        <!-- Barra de búsqueda -->
+        <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-4">
+          <div class="search-bar row bg-light p-2 rounded-4">
+            <div class="col-11 col-md-7">
+              <form id="search-form" action="productos.html" method="post">
+                <input type="text" class="form-control border-0 bg-transparent" placeholder="Buscar producto">
+              </form>
+            </div>
+            <div class="col-1">
+              <i class="bi bi-search"></i> <!-- Ícono de búsqueda -->
+            </div>
+          </div>
+        </div>
+        <!-- Navegación principal -->
+        <div class="col-lg-6">
+          <ul class="navbar-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center mb-0 fw-bold text-uppercase text-dark">
+            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="emprendimientos.html" class="nav-link">Emprendimientos</a></li>
+            <li class="nav-item active"><a href="productos.html" class="nav-link">Productos</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item">
+              <!-- Ícono de perfil -->
+              <a href="login.html" class="nav-link"><i class="bi bi-person-circle" style="font-size: 2rem;"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección principal de productos -->
+  <main class="container py-5">
+    <h2 class="text-center mb-4 fw-bold">Catálogo de Productos</h2>
+
+    <!-- Lista de productos en formato de grilla -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Producto 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <!-- Imagen del producto -->
+          <img src="images/producto1.jpg" class="card-img-top" alt="Zanahorias">
+          <div class="card-body">
+            <h5 class="card-title">Zanahorias</h5>
+            <p class="card-text">Frescas y orgánicas, perfectas para tu alimentación.</p>
+            <!-- Botón para ver detalles del producto -->
+            <a href="producto.html?id=1" class="btn btn-primary">Ver producto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/producto2.jpg" class="card-img-top" alt="Manzanas">
+          <div class="card-body">
+            <h5 class="card-title">Manzanas</h5>
+            <p class="card-text">Manzanas rojas, cultivadas sin pesticidas.</p>
+            <a href="producto.html?id=2" class="btn btn-primary">Ver producto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/producto3.jpg" class="card-img-top" alt="Lechugas">
+          <div class="card-body">
+            <h5 class="card-title">Lechugas</h5>
+            <p class="card-text">Hojas frescas, listas para tus ensaladas.</p>
+            <a href="producto.html?id=3" class="btn btn-primary">Ver producto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 4 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/producto4.jpg" class="card-img-top" alt="Tomates">
+          <div class="card-body">
+            <h5 class="card-title">Tomates</h5>
+            <p class="card-text">Ricos en sabor y completamente naturales.</p>
+            <a href="producto.html?id=4" class="btn btn-primary">Ver producto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 5 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/producto5.jpg" class="card-img-top" alt="Fresas">
+          <div class="card-body">
+            <h5 class="card-title">Fresas</h5>
+            <p class="card-text">Dulces y jugosas, perfectas para cualquier ocasión.</p>
+            <a href="producto.html?id=5" class="btn btn-primary">Ver producto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 6 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/producto6.jpg" class="card-img-top" alt="Bananas">
+          <div class="card-body">
+            <h5 class="card-title">Bananas</h5>
+            <p class="card-text">Fuente de energía natural para tu día.</p>
+            <a href="producto.html?id=6" class="btn btn-primary">Ver producto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-secondary bg-gradient text-light py-4">
+    <div class="container-lg">
+      <div class="row">
+        <!-- Información del sitio -->
+        <div class="col-md-4">
+          <h5 class="text-uppercase text-light">Eco-Shop</h5>
+          <p>Productos ecológicos para cuidar tu salud y el planeta.</p>
+        </div>
+        <!-- Enlaces adicionales -->
+        <div class="col-md-4">
+          <h5 class="text-uppercase text-light">Enlaces útiles</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Términos y condiciones</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Política de privacidad</a></li>
+          </ul>
+        </div>
+        <!-- Íconos de redes sociales -->
+        <div class="col-md-4 text-center">
+          <a href="#" class="text-light mx-2"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a>
+          <a href="#" class="text-light mx-2"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a>
+          <a href="#" class="text-light mx-2"><i class="bi bi-whatsapp" style="font-size: 2rem;"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
